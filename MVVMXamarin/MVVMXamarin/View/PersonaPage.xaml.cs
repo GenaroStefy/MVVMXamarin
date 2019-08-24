@@ -27,13 +27,13 @@ namespace MVVMXamarin.View
             if(e.SelectedItem != null)
             {
                 PersonaModel modelo = (PersonaModel)e.SelectedItem;
-                //contexto.Nombre = modelo.Nombre;
-                //contexto.Apelllido = modelo.Apelllido;
-                //contexto.Edad = modelo.Edad;
-                //contexto.Id = modelo.Id;
+                contexto.Nombre = modelo.Nombre;
+                contexto.Apelllido = modelo.Apelllido;
+                contexto.Edad = modelo.Edad;
+                contexto.Id = modelo.Id;
 
                 //Navegacion entre views
-                Navigation.PushModalAsync(new DetallePersonaPage(modelo));
+                //Navigation.PushModalAsync(new DetallePersonaPage(modelo));
 
             }
         }
